@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# Provider Details
+# ---------------------------------------------------------------------------------------------------------------------
+
+Provider: AWS
+Region: eu-central-1
+
+# ---------------------------------------------------------------------------------------------------------------------
+# VPC, Subnet, Elastic IP, Internet gateway, Route table, Route table association, Security Group
+# ---------------------------------------------------------------------------------------------------------------------
+
+VPC:
+Name of VPC: ingress
+CIDR Block: 192.168.1.0/24
+
+Subnet:
+Name of Subnet: ingress-Subnet
+CIDR Block: 192.168.1.0/26
+Availability_zone: "eu-central-1a"
+
+Elastic IP:
+Name: inress-eip
+
+Internet Gateway:
+Name: ingress-gtw
+
+Route table:
+Name: rt-ingress
+
+Route table association:
+Name: rt-ingress-association
+
+Security group:
+Name: sgingress
+
+# ---------------------------------------------------------------------------------------------------------------------
+# key-pair & EC2 instance
+# ---------------------------------------------------------------------------------------------------------------------
+
+Key pair:
+Name: terraform-key
+
+EC2 instance: 
+Name: apache
+"ami-076431be05aaf8080"
